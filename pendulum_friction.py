@@ -20,7 +20,7 @@ Format of initial is as follows
 g = 9.81
 L = 0.2 
 M = 0.4
-b = 2
+b = 0.3
 initial = [10*2*m.pi/360, 0]
 
 def pendulum_diff(initial,t):
@@ -71,7 +71,7 @@ def inter_state_plot(pend_sol):
   
 
 def main():
-  t = np.linspace(0, 10, 1001)
+  t = np.linspace(0, 20, 5001)
   pend_sol = odeint(pendulum_diff,initial,t)
   state_plot(pend_sol,t)
   inter_state_plot(pend_sol)
