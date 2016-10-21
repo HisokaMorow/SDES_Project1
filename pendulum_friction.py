@@ -5,11 +5,20 @@ from scipy.integrate import odeint
 
 """
 Some constant required to solve
-the differential equation 
+the differential equation
+
+g is acceleration due to gravity in m/sec^2
+L is the length of the string holding the pendulum in metres
+M is the mass of the pendulum in Kg
+b is coefficient of friction
+initial is a list containing initial condition
+
+Format of initial is as follows
+[initial_angular_position(in radians), initial_angular_velocity(in radian/sec)
 """
 
 g = 9.81
-L = 0.2
+L = 0.2 
 M = 0.4
 b = 2
 initial = [10*2*m.pi/360, 0]
@@ -32,8 +41,7 @@ def pendulum_diff(initial,t):
 def state_plot(pend_sol,t):
 
   """
-  This function plots state theta and omega
-  vs time in a figure.
+  This function plots state theta and omega vs time in a figure.
   """
   plt.figure(1)
   plt.plot(t,pend_sol[:,0],'.-',label='$\Theta$(Angular position)',linewidth=1,markersize=1,markeredgewidth=1,color='r')
@@ -67,6 +75,5 @@ def main():
   pend_sol = odeint(pendulum_diff,initial,t)
   state_plot(pend_sol,t)
   inter_state_plot(pend_sol)
-
 
 main()
