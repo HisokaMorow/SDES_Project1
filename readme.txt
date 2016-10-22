@@ -1,12 +1,18 @@
 Author: Aveek Podder
 
-Content: 153070032.tex - tex file generating the PDF report for pendulum with friction sytem.
+Content: 
+	153070032.tex - tex file generating the PDF report for pendulum with friction sytem.
+
 	 153070032.bib - Contains the bibliography.
-	 pendulum_friction.py - Python file - Contains the code for generating the phase_plot and inter_state_plot of a pendulum with friction system. 
+	 pendulum_friction.py - Python file - Contains the code for generating the phase_plot and inter_state_plot of a pendulum with friction system.
+
 	 test_pendulum_friction.py - Python file - Contains test for pendulum_friction.py.
+
 	 153070032.ipynb - ipython notebook file contains the code for animation of pendulum with friction system.
+
 	 makefile - contains code to run everything with one command
 
+#######################################################################
 
 Instructions for running:
 	
