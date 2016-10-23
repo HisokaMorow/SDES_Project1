@@ -12,7 +12,27 @@ Content:
 
 	 makefile - contains code to run everything with one command
 
-#######################################################################
+#######################################################################################################################################################################################################################
+
+Software dependencies:
+
+for running pendulum_friction.py and test_pendulum_friction.py:
+	python version 2.7.12
+	numpy 1.11.1
+	scipy 0.18.1
+	matplotlib 1.5.3
+
+for running 153070032.ipynb:
+	Ipython notebook-ipython version 2.4.1
+	ffmpeg4
+
+for running 153070032.tex and 153070032.bib
+	pdfTeX 3.14159265-2.6-1.40.16
+
+for running make file:
+	GNU Make 4.1
+
+################################################################################################################################################
 
 Instructions for running:
 	
